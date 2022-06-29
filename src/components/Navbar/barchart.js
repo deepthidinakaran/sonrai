@@ -57,9 +57,7 @@ const Barchart = (props) => {
         series: {
           cursor: "pointer",
           events: {
-            click: function (event) {
-              console.log("shama", event);
-            },
+            click: (event) => props.onBarClick(event)
           },
         },
       },
