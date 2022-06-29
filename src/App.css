@@ -1,38 +1,98 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+    
+  
+  }
+.cards{
+   width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-left: 12pt;
+  padding-right:  12pt; ;
+  background-color: #f1ecec;
+  text-align:center;
+  font-family: 'arial';
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+.cards div {
+  background-color: #f4e9e9;
+}
+
+.after{
+  font-family: 'arial';
+  font-size: 16px;padding-left: 12pt;
+font-weight: bold;
+padding-bottom :15pt;
+padding-top:15pt ;
+letter-spacing: 0px;
+color: #121213;
+opacity: 1;
+justify-content: center;
+}
+.table{
+ 
+ font-family: 'arial';
+ height: 50px;
+ }
+.table th{
+font-family: 'arial regular';
+font-size: 16px;
+text-align: center;
+
+}
+.table td{
   text-align: center;
+   width:1.5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.detailed{
+  font-family: 'arial';
+  font-size: 16px;
+  font-weight:bold ;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle{
+  font-family:arial;
+  font-weight:bold;
+  font-size: 16px;
+}
+.Table1{
+  overflow-y:scroll;
+  height: 650px;
+}
+.Table1 td{
+  word-break: break-all;
+}
+.accwidth{
+  width:15%;
+}
+.contents{
+  font-family:'arial' ;
+  font-weight:bold ;
+}
+.sonraiHeading {
+  margin-left:-750px;
+}
+.logosize{
+  margin-left: -80px;
+}
+  
+.bardrop .dropdown{
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    padding: 16px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.date{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    flex-direction: row-reverse;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown-menu.show{
+  max-height: 135px !important;
+    overflow-y: scroll!important;
 }
