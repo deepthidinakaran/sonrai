@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Dropdown } from "react-bootstrap";
 import SNavbar from "./components/Navbar/SNavbar";
 import DetailedTable from "./components/DetailedTable";
 import OptimizationBarChart from "./components/OptimizationBarChart";
@@ -13,6 +14,7 @@ import APAfterOptimization from "./components/sankey/APAfterOptimization";
 import APBeforeOptimization from "./components/sankey/APBeforeOptimization";
 import DetailedView from "./components/sankey/DetailedView";
 import scatter from "./config/scatter.json";
+import account548652128817 from "./config/account2.json";
 
 //INITIAL SANKEY OPTIONS
 let sankeyOptions = {
@@ -89,54 +91,64 @@ function App() {
       },
     ];
     setbarArray(bar);
-    getSankeyData();
+    // getSankeyData();
   }, []);
 
-  const onBarClick = (accounts) => {
-    console.log(accounts);
+  const onBarClick = (event) => {
+    let accountNumber = event.point.category;
+    getSankeyData(accountNumber);
   };
 
-  const getSankeyData = () => {
+  const getSankeyData = (value) => {
+    
     setLoading(true);
+      //DUPLICATING FOR EACH SANKEY CHART
+      let temp = JSON.parse(JSON.stringify(sankeyOptions));
+      let sanhigh = JSON.parse(JSON.stringify(sankeyOptions));
+      let sanhighArray = JSON.parse(JSON.stringify(sankeyOptions));
+      let allPolicies = [];
 
-    //DUPLICATING FOR EACH SANKEY CHART
-    let temp = JSON.parse(JSON.stringify(sankeyOptions));
-    let sanhigh = JSON.parse(JSON.stringify(sankeyOptions));
-    let sanhighArray = JSON.parse(JSON.stringify(sankeyOptions));
-    let allPolicies = [];
+      let fileName = "";
+      if(value === "548652128817") {
+        fileName = account548652128817;
+      }
 
-    sankey.data.forEach((element) => {
+      console.log("shama",fileName.data)
+
+      fileName.data.forEach((element) => {
+        //BEFORE OPTIMIZATION SANKEY
+        allPolicies.push([element["policySrn"], element]);
+
+        //AFTER OPTIMIZATION SANKEY
+        sanhigh.series[0].data.push(
+          [value, element.policySrn, 1],
+          [element.policySrn, element.prediction, 1]
+        );
+
+        //DETAILED SANKEY CHARTS
+        sanhighArray.series[0].data.push(
+          [value, element.resourceSrn, 1],
+          [element.resourceSrn, element.policySrn, 1],
+          [element.policySrn, element.permission, 1],
+          [element.permission, element.policyEntryResourceFilter, 1],
+          [element.policyEntryResourceFilter, element.prediction, 1]
+        );
+      });
+
       //BEFORE OPTIMIZATION SANKEY
-      allPolicies.push([element["policySrn"], element]);
-
-      //AFTER OPTIMIZATION SANKEY
-      sanhigh.series[0].data.push(
-        [element.effectivePermissionAccount, element.policySrn, 1],
-        [element.policySrn, element.prediction, 1]
+      let distinctPolicies = [...new Map(allPolicies).values()];
+      distinctPolicies.forEach((element) =>
+        temp.series[0].data.push([
+          value,
+          element.policySrn,
+          1,
+        ])
       );
-
-      //DETAILED SANKEY CHARTS
-      sanhighArray.series[0].data.push(
-        [element.effectivePermissionAccount, element.resourceSrn, 1],
-        [element.resourceSrn, element.policySrn, 1],
-        [element.policySrn, element.permission, 1],
-        [element.permission, element.policyEntryResourceFilter, 1],
-        [element.policyEntryResourceFilter, element.prediction, 1]
-      );
-    });
-
-    //BEFORE OPTIMIZATION SANKEY
-    let distinctPolicies = [...new Map(allPolicies).values()];
-    distinctPolicies.forEach((element) =>
-      temp.series[0].data.push([
-        element.effectivePermissionAccount,
-        element.policySrn,
-        1,
-      ])
-    );
-    setTempArray(temp);
-    setsanhighArray(sanhighArray);
-    setsanArray(sanhigh);
+      setTempArray(temp);
+      setsanhighArray(sanhighArray);
+      setsanArray(sanhigh);
+   
+    console.log("shama", temp,sanhighArray,sanhigh)
     setLoading(false);
   };
 
@@ -144,6 +156,11 @@ function App() {
     <div className="App">
       <SNavbar />
       <DateTime />
+      <Dropdown className="mr-3" style={{ textAlign:"right" }}>
+        <Dropdown.Toggle>
+          srn:rainbow::Swimlane/36f13001-1552-4caf-987c-258e7f926016
+        </Dropdown.Toggle>
+      </Dropdown>
       <BeforeModel
         accountCount={accountCount}
         policieCount={policieCount}
@@ -162,9 +179,16 @@ function App() {
         categoryData={barAccountCount}
         onBarClick={onBarClick}
       />
-      <APBeforeOptimization isLoading={isLoading} tempArray={tempArray} />
-      <APAfterOptimization isLoading={isLoading} sanArray={sanArray} />
-      <DetailedView isLoading={isLoading} sanhighArray={sanhighArray} />
+      {isLoading ? (
+        <div>Loading</div>
+      ) : (
+        <>
+          <APBeforeOptimization isLoading={isLoading} tempArray={tempArray} />
+          <APAfterOptimization isLoading={isLoading} sanArray={sanArray} />
+          <DetailedView isLoading={isLoading} sanhighArray={sanhighArray} />
+        </>
+      )}
+
       <DetailedTable
         data={{
           accountCount: accountCount.length,

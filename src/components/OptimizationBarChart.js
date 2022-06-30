@@ -7,8 +7,11 @@ const OptimizationBarChart = (props) => {
   return (
     <>
       <div className="bardrop">
-        {/* <DropdownComponent name="Account" /> */}
-      </div>
+      <Dropdown>
+        <Dropdown.Toggle>
+          Accounts
+        </Dropdown.Toggle>
+      </Dropdown>      </div>
       <Card className="m-3">
         <Barchart
           seriesData={props.seriesData}
