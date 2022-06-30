@@ -1,48 +1,48 @@
 {
   "swin": [
     {
-      "swimlane": "srn:rainbow::Swimlane/36f13001-1552-4caf-987c-258e7f926016",
+      "swimlane": "srn:rainbow::Swimlane/Global",
       "accounts": [
         {
-          "effectivePermissionAccount": "751772856142",
-          "optimised_policies": 2,
-          "total_policies": 2,
-          "perm_count": 3,
-          "reduced_perc": 0.0
-        },
-        {
-          "effectivePermissionAccount": "780852475197",
+          "effectivePermissionAccount": "548652128817",
           "optimised_policies": 1,
-          "total_policies": 1,
+          "total_policies": 7,
           "perm_count": 2,
-          "reduced_perc": 0.0
+          "reduced_perc": 85.71428571428571
         },
         {
           "effectivePermissionAccount": "213217834095",
           "optimised_policies": 1,
           "total_policies": 1,
-          "perm_count": 8,
+          "perm_count": 26,
           "reduced_perc": 0.0
         },
         {
-          "effectivePermissionAccount": "380873608913",
-          "optimised_policies": 4,
-          "total_policies": 4,
-          "perm_count": 10,
-          "reduced_perc": 0.0
-        },
-        {
-          "effectivePermissionAccount": "548652128817",
-          "optimised_policies": 235,
-          "total_policies": 1816,
-          "perm_count": 3296,
-          "reduced_perc": 87.05947136563877
+          "effectivePermissionAccount": "003074056772",
+          "optimised_policies": 1,
+          "total_policies": 3,
+          "perm_count": 1,
+          "reduced_perc": 66.66666666666667
         },
         {
           "effectivePermissionAccount": "064667896599",
           "optimised_policies": 1,
           "total_policies": 1,
-          "perm_count": 1,
+          "perm_count": 26,
+          "reduced_perc": 0.0
+        },
+        {
+          "effectivePermissionAccount": "717025312494",
+          "optimised_policies": 1,
+          "total_policies": 1,
+          "perm_count": 26,
+          "reduced_perc": 0.0
+        },
+        {
+          "effectivePermissionAccount": "380873608913",
+          "optimised_policies": 1,
+          "total_policies": 1,
+          "perm_count": 26,
           "reduced_perc": 0.0
         }
       ]

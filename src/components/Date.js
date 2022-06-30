@@ -15,12 +15,12 @@ export const DateTime = () => {
       {/* <p> Time : {date.toLocaleTimeString()}</p> */}
       <p>
         {" "}
-        Date :{" "}
-        {date.toLocaleDateString("en-US", {
+        Date : {"May 16,2022"}
+        {/* {date.toLocaleDateString("en-US", {
           year: "numeric",
           month: "long",
           day: "numeric",
-        })}
+        })} */}
       </p>
     </div>
   );

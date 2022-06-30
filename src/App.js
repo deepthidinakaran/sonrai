@@ -15,6 +15,11 @@ import APBeforeOptimization from "./components/sankey/APBeforeOptimization";
 import DetailedView from "./components/sankey/DetailedView";
 import scatter from "./config/scatter.json";
 import account548652128817 from "./config/account2.json";
+import account003074056772 from "./config/account3.json";
+import account064667896599 from "./config/account4.json";
+import account213217834095 from "./config/account5.json";
+import account380873608913 from "./config/account6.json";
+import account717025312494 from "./config/account7.json";
 
 //INITIAL SANKEY OPTIONS
 let sankeyOptions = {
@@ -62,7 +67,6 @@ function App() {
   const [isLoading, setLoading] = useState(true);
   const [barAccountCount, setbarAccountCount] = useState(0);
 
-  
   useEffect(() => {
     //BARCHART
     let SwimlaneAccountCount = [];
@@ -100,55 +104,61 @@ function App() {
   };
 
   const getSankeyData = (value) => {
-    
     setLoading(true);
-      //DUPLICATING FOR EACH SANKEY CHART
-      let temp = JSON.parse(JSON.stringify(sankeyOptions));
-      let sanhigh = JSON.parse(JSON.stringify(sankeyOptions));
-      let sanhighArray = JSON.parse(JSON.stringify(sankeyOptions));
-      let allPolicies = [];
+    //DUPLICATING FOR EACH SANKEY CHART
+    let temp = JSON.parse(JSON.stringify(sankeyOptions));
+    let sanhigh = JSON.parse(JSON.stringify(sankeyOptions));
+    let sanhighArray = JSON.parse(JSON.stringify(sankeyOptions));
+    let allPolicies = [];
 
-      let fileName = "";
-      if(value === "548652128817") {
-        fileName = account548652128817;
-      }
+    let fileName = "";
+    if (value === "548652128817") {
+      fileName = account548652128817;
+    } else if (value === "003074056772") {
+      fileName = account003074056772;
+    } else if (value === "064667896599") {
+      fileName = account064667896599;
+    } else if (value === "213217834095") {
+      fileName = account213217834095;
+    } else if (value === "380873608913") {
+      fileName = account380873608913;
+    } else if (value === "717025312494");
+    {
+      fileName = account717025312494;
+    }
 
-      console.log("shama",fileName.data)
+    console.log("shama", fileName.data);
 
-      fileName.data.forEach((element) => {
-        //BEFORE OPTIMIZATION SANKEY
-        allPolicies.push([element["policySrn"], element]);
-
-        //AFTER OPTIMIZATION SANKEY
-        sanhigh.series[0].data.push(
-          [value, element.policySrn, 1],
-          [element.policySrn, element.prediction, 1]
-        );
-
-        //DETAILED SANKEY CHARTS
-        sanhighArray.series[0].data.push(
-          [value, element.resourceSrn, 1],
-          [element.resourceSrn, element.policySrn, 1],
-          [element.policySrn, element.permission, 1],
-          [element.permission, element.policyEntryResourceFilter, 1],
-          [element.policyEntryResourceFilter, element.prediction, 1]
-        );
-      });
-
+    fileName.data.forEach((element) => {
       //BEFORE OPTIMIZATION SANKEY
-      let distinctPolicies = [...new Map(allPolicies).values()];
-      distinctPolicies.forEach((element) =>
-        temp.series[0].data.push([
-          value,
-          element.policySrn,
-          1,
-        ])
+      allPolicies.push([element["policySrn"], element]);
+
+      //AFTER OPTIMIZATION SANKEY
+      sanhigh.series[0].data.push(
+        [value, element.policySrn, 1],
+        [element.policySrn, element.prediction, 1]
       );
-      setTempArray(temp);
-      setsanhighArray(sanhighArray);
-      setsanArray(sanhigh);
-   
-    console.log("shama", temp,sanhighArray,sanhigh)
+
+      //DETAILED SANKEY CHARTS
+      sanhighArray.series[0].data.push(
+        [value, element.resourceSrn, 1],
+        [element.resourceSrn, element.policySrn, 1],
+        [element.policySrn, element.permission, 1],
+        [element.permission, element.policyEntryResourceFilter, 1],
+        [element.policyEntryResourceFilter, element.prediction, 1]
+      );
+    });
+
+    //BEFORE OPTIMIZATION SANKEY
+    let distinctPolicies = [...new Map(allPolicies).values()];
+    distinctPolicies.forEach((element) =>
+      temp.series[0].data.push([value, element.policySrn, 1])
+    );
+    setTempArray(temp);
+    setsanhighArray(sanhighArray);
+    setsanArray(sanhigh);
+
+    console.log("dd", temp, sanhighArray, sanhigh);
     setLoading(false);
   };
 
@@ -156,10 +166,8 @@ function App() {
     <div className="App">
       <SNavbar />
       <DateTime />
-      <Dropdown className="mr-3" style={{ textAlign:"right" }}>
-        <Dropdown.Toggle>
-          srn:rainbow::Swimlane/36f13001-1552-4caf-987c-258e7f926016
-        </Dropdown.Toggle>
+      <Dropdown className="mr-3" style={{ textAlign: "right" }}>
+        <Dropdown.Toggle>srn:rainbow::Swimlane/Global</Dropdown.Toggle>
       </Dropdown>
       <BeforeModel
         accountCount={accountCount}
