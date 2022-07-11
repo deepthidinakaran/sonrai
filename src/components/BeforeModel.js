@@ -10,7 +10,7 @@ const BeforeModel = (props) => {
             <th>Account</th>
             <th>Policies</th>
             <th>Permissions</th>
-            <th>Resource Srn</th>
+            <th>ResourceSrn</th>
           </tr>
         </thead>
         <tbody>

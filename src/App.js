@@ -9,7 +9,7 @@ import sonpai from "./config/sonpai.json";
 import Footer from "./components/footer";
 import DateTime from "./components/Date";
 import AfterModel from "./components/AfterModel";
-import BeforeModel from "./components/BeforeModel";
+// import BeforeModel from "./components/BeforeModel";
 import APAfterOptimization from "./components/sankey/APAfterOptimization";
 import APBeforeOptimization from "./components/sankey/APBeforeOptimization";
 import DetailedView from "./components/sankey/DetailedView";
@@ -57,11 +57,11 @@ function App() {
   const [sanArray, setsanArray] = useState({});
   const [sanhighArray, setsanhighArray] = useState({});
   const [accountCount, setaccountCount] = useState(6);
-  const [perCount, setperCount] = useState(3296);
-  const [policieCount, setpolicieCount] = useState(1825);
-  const [srnCount, setsrnCount] = useState(285);
+  const [perCount, setperCount] = useState(29);
+  const [policieCount, setpolicieCount] = useState(14);
+  const [srnCount, setsrnCount] = useState(18);
   const [filterCount, setfilterCount] = useState(0);
-  const [predictionCount, setpredictionCount] = useState(248);
+  const [predictionCount, setpredictionCount] = useState();
   const [laneCount, setlaneCount] = useState(0);
   const [namecount, setnamecount] = useState(0);
   const [isLoading, setLoading] = useState(true);
@@ -71,26 +71,26 @@ function App() {
     //BARCHART
     let SwimlaneAccountCount = [];
     let barpolicy = [];
-    scatter.swin.forEach((element) =>
-      element.accounts.forEach((item) => {
-        barpolicy.push({
-          total_policies: item.total_policies,
-          optimised_policies: item.optimised_policies,
-        });
-        SwimlaneAccountCount.push(item.effectivePermissionAccount);
-      })
-    );
+    scatter.swin.forEach((item) => {
+      barpolicy.push({
+        total_recommendations: item.total_recommendations,
+        optimised_recommendations: item.optimised_recommendations,
+      });
+      SwimlaneAccountCount.push(item.account);
+    });
     setbarAccountCount(SwimlaneAccountCount.slice(0, 20));
 
     let bar = [
       {
         name: "Original Set  Policies",
-        data: barpolicy.map((element) => element.total_policies).slice(0, 20),
+        data: barpolicy
+          .map((element) => element.total_recommendations)
+          .slice(0, 20),
       },
       {
         name: "Optimal Set",
         data: barpolicy
-          .map((element) => element.optimised_policies)
+          .map((element) => element.optimised_recommendations)
           .slice(0, 20),
       },
     ];
@@ -122,8 +122,7 @@ function App() {
       fileName = account213217834095;
     } else if (value === "380873608913") {
       fileName = account380873608913;
-    } else if (value === "717025312494");
-    {
+    } else if (value === "717025312494") {
       fileName = account717025312494;
     }
 
@@ -167,14 +166,14 @@ function App() {
       <SNavbar />
       <DateTime />
       <Dropdown className="mr-3" style={{ textAlign: "right" }}>
-        <Dropdown.Toggle>srn:rainbow::Swimlane/Global</Dropdown.Toggle>
+        <Dropdown.Toggle>Account</Dropdown.Toggle>
       </Dropdown>
-      <BeforeModel
+      {/* <BeforeModel
         accountCount={accountCount}
         policieCount={policieCount}
         perCount={perCount}
         srnCount={srnCount}
-      />
+      /> */}
       <AfterModel
         accountCount={accountCount}
         policieCount={policieCount}

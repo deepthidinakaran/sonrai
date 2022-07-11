@@ -12,10 +12,11 @@ const DetailedTable = (props) => {
     sankeyjson.forEach((elm, index) => {
       tableData.push(
         <tr key={index}>
-          <td>{elm.effectivePermissionAccount}</td>
-          <td>{elm.policySrn}</td>
+          <td>{elm.account}</td>
+          {/* <td>{elm.policySrn}</td> */}
           <td>{elm.resourceSrn}</td>
-          <td>{elm.permission_list}</td>
+          <td>{elm.type}</td>
+          <td>{elm.permission}</td>
           <td>{elm.prediction}</td>
         </tr>
       );
@@ -31,8 +32,9 @@ const DetailedTable = (props) => {
           <thead>
             <tr>
               <th className="accwidth">Account</th>
-              <th>Policy Srn</th>
-              <th>Resource Srn</th>
+              {/* <th>PolicySrn</th> */}
+              <th>ResourceSrn</th>
+              <th>Type</th>
               <th>Permission List</th>
               <th>Prediction</th>
             </tr>

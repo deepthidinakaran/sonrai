@@ -11,7 +11,7 @@ const APBeforeOptimization = (props) => {
       <div className="detailed ">Account and Policies Before Optimisation</div>
       <div className="d-flex flex-row justify-content-between subtitle">
         <span className="p-3">Account</span>
-        <span className="p-3">Policy Srn</span>
+        <span className="p-3">PolicySrn</span>
       </div>
       <div></div>
       {props.isLoading ? (

@@ -1,1894 +1,820 @@
 {
   "data": [
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:createbucket",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createloggroup",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketacl",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
+      "account": "717025312494",
+      "permission": "s3:deleteobject",
       "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "glue:*",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcattribute",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrole",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::crawler-public*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "logs:putlogevents",
       "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:deleteobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcendpoints",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketlocation",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listallmybuckets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcendpoints",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createloggroup",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:deleteobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrole",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "glue:*",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "cloudwatch:putmetricdata",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createnetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:listrolepolicies",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:getobject",
       "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listallmybuckets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "cloudwatch:putmetricdata",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcattribute",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcendpoints",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createloggroup",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "cloudwatch:putmetricdata",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describenetworkinterfaces",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletenetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createloggroup",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listallmybuckets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createlogstream",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcattribute",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:deleteobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listbucket",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createnetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createlogstream",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:deleteobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:createbucket",
       "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrolepolicy",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describenetworkinterfaces",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:deleteobject",
       "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrole",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describenetworkinterfaces",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesecuritygroups",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:deleteobject",
       "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrolepolicy",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createlogstream",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:deleteobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describeroutetables",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:putobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
       "permission": "s3:createbucket",
       "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::crawler-public*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listallmybuckets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::crawler-public*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesubnets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listallmybuckets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "glue:*",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:createbucket",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcattribute",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "glue:*",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcendpoints",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:getobject",
       "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketacl",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::crawler-public*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrolepolicy",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:deleteobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::crawler-public*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesubnets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describeroutetables",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesubnets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:listrolepolicies",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describeroutetables",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listbucket",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listbucket",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:deleteobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesubnets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesecuritygroups",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrolepolicy",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:putlogevents",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:deleteobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrolepolicy",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:putlogevents",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "glue:*",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrolepolicy",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcattribute",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:listrolepolicies",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createlogstream",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:putlogevents",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:putlogevents",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createnetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketacl",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "cloudwatch:putmetricdata",
       "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketacl",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrole",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createloggroup",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesecuritygroups",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketacl",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "glue:*",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletenetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcendpoints",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesecuritygroups",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:listrolepolicies",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:putobject",
       "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:createbucket",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketlocation",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:deleteobject",
+      "account": "717025312494",
+      "permission": "s3:getobject",
       "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describeroutetables",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletenetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describenetworkinterfaces",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletenetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:putobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketacl",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "cloudwatch:putmetricdata",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createloggroup",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listbucket",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createnetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesecuritygroups",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesubnets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createlogstream",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketlocation",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrole",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listbucket",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "cloudwatch:putmetricdata",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:getobject",
       "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcendpoints",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:listallmybuckets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketlocation",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesecuritygroups",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletenetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletenetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describeroutetables",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:createlogstream",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describenetworkinterfaces",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createnetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:createbucket",
       "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describesubnets",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describeroutetables",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:listrolepolicies",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createnetworkinterface",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describenetworkinterfaces",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:deletetags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketlocation",
+      "account": "717025312494",
+      "permission": "cloudwatch:putmetricdata",
       "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:listrolepolicies",
+      "account": "717025312494",
+      "permission": "s3:listbucket",
       "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:getobject",
       "policyEntryResourceFilter": "arn:aws:s3:::crawler-public*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:network-interface/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "logs:putlogevents",
-      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:deleteobject",
+      "account": "717025312494",
+      "permission": "s3:putobject",
       "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:security-group/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
+      "account": "717025312494",
+      "permission": "s3:deleteobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "s3:getbucketlocation",
-      "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:getobject",
-      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "policyEntryResourceFilter": "arn:aws:s3:::crawler-public*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:createtags",
-      "policyEntryResourceFilter": "arn:aws:ec2:*:*:instance/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
-    },
-    {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
-      "policyName": "AWSGlueServiceRole",
+      "account": "717025312494",
       "permission": "s3:getobject",
       "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
+      "account": "717025312494",
+      "permission": "s3:putobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::crawler-public*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
-      "policyName": "AWSGlueServiceRole",
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
       "permission": "s3:listbucket",
       "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
-      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
-      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-cost-report-AWSCURCrawlerComponentFunction-1PQ1S4HEQPEN3",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "iam:getrole",
+      "account": "717025312494",
+      "permission": "s3:listbucket",
       "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
     },
     {
+      "account": "717025312494",
+      "permission": "s3:listbucket",
+      "policyEntryResourceFilter": "*",
       "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
       "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
-      "policyName": "AWSGlueServiceRole",
-      "permission": "ec2:describevpcattribute",
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:createbucket",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:putobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:putobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:deleteobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "cloudwatch:putmetricdata",
       "policyEntryResourceFilter": "*",
-      "prediction": "Group 469",
-      "swimlaneSrn": "srn:rainbow::Swimlane/Global"
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::crawler-public*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:putobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:deleteobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:deleteobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:putobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:deleteobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:deleteobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "cloudwatch:putmetricdata",
+      "policyEntryResourceFilter": "*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:putobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "logs:putlogevents",
+      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev_cost_dashboards_crawler_role",
+      "source_uuid": "d701e226-72b2-4b2a-b459-e82b6b18b6aa",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:deleteobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "logs:putlogevents",
+      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "logs:putlogevents",
+      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "cloudwatch:putmetricdata",
+      "policyEntryResourceFilter": "*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::*/*aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "logs:putlogevents",
+      "policyEntryResourceFilter": "arn:aws:logs:*:*:/aws-glue/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-action-es",
+      "source_uuid": "19987a1a-a6e7-4201-b4a7-c4568cd27781",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:putobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-explorer-crawler",
+      "source_uuid": "62deef70-41b2-40bd-88ea-c40da8e7f9d9",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:createbucket",
+      "policyEntryResourceFilter": "arn:aws:s3:::aws-glue-*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards-kubecost",
+      "source_uuid": "814563c1-4c46-42da-b0a7-1be3c1107c23",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:listbucket",
+      "policyEntryResourceFilter": "*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "s3:getobject",
+      "policyEntryResourceFilter": "arn:aws:s3:::crawler-public*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/ManagedPolicy/AWSGlueServiceRole",
+      "prediction": "Group 11",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/AWSGlueServiceRole-cost-dashboards",
+      "source_uuid": "60ff7344-9151-416f-bf03-e71620edebd5",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "rds-db:connect",
+      "policyEntryResourceFilter": "arn:aws:rds-db:us-east-1:717025312494:dbuser:fake_place_holder/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/InlinePolicy/role/dev-carleton-ep/dev-carleton-effective-permissions",
+      "prediction": "Group 103",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-carleton-ep",
+      "source_uuid": "42772891-50ac-47a2-80c9-c536a2c47c2d",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "rds-db:connect",
+      "policyEntryResourceFilter": "arn:aws:rds-db:us-east-1:717025312494:dbuser:fake_place_holder/*",
+      "policySrn": "NA",
+      "prediction": "Group 103",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-dev19323201-ep",
+      "source_uuid": "187b7cb4-04ff-47d8-bf89-8153efe355e8",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_UBER_POLICY"
+    },
+    {
+      "account": "717025312494",
+      "permission": "rds-db:connect",
+      "policyEntryResourceFilter": "arn:aws:rds-db:us-east-1:717025312494:dbuser:cluster-4J7LGJFVKZF5JGFAIY7OS4ATDI/*",
+      "policySrn": "NA",
+      "prediction": "Group 103",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-dev19323201-ep",
+      "source_uuid": "187b7cb4-04ff-47d8-bf89-8153efe355e8",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_UBER_POLICY"
+    },
+    {
+      "account": "717025312494",
+      "permission": "rds-db:connect",
+      "policyEntryResourceFilter": "arn:aws:rds-db:us-east-1:717025312494:dbuser:cluster-4J7LGJFVKZF5JGFAIY7OS4ATDI/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/InlinePolicy/role/dev-dev19323201-ep/dev-dev19323201-effective-permissions",
+      "prediction": "Group 103",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-dev19323201-ep",
+      "source_uuid": "a79e96a4-281c-46d2-83f1-d0bb270e91df",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "rds-db:connect",
+      "policyEntryResourceFilter": "arn:aws:rds-db:us-east-1:717025312494:dbuser:fake_place_holder/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/InlinePolicy/role/dev-dev19323201-ep/dev-dev19323201-effective-permissions",
+      "prediction": "Group 103",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-dev19323201-ep",
+      "source_uuid": "a79e96a4-281c-46d2-83f1-d0bb270e91df",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "rds-db:connect",
+      "policyEntryResourceFilter": "arn:aws:rds-db:us-east-1:717025312494:dbuser:cluster-4J7LGJFVKZF5JGFAIY7OS4ATDI/*",
+      "policySrn": "srn:aws:iam::717025312494/Policy/InlinePolicy/role/dev-carleton-ep/dev-carleton-effective-permissions",
+      "prediction": "Group 103",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-carleton-ep",
+      "source_uuid": "42772891-50ac-47a2-80c9-c536a2c47c2d",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_ROLE_UNUSED_PERMISSION"
+    },
+    {
+      "account": "717025312494",
+      "permission": "rds-db:connect",
+      "policyEntryResourceFilter": "arn:aws:rds-db:us-east-1:717025312494:dbuser:fake_place_holder/*",
+      "policySrn": "NA",
+      "prediction": "Group 103",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-carleton-ep",
+      "source_uuid": "7ef05bf4-633a-451d-bec5-6236c762ce33",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_UBER_POLICY"
+    },
+    {
+      "account": "717025312494",
+      "permission": "rds-db:connect",
+      "policyEntryResourceFilter": "arn:aws:rds-db:us-east-1:717025312494:dbuser:cluster-4J7LGJFVKZF5JGFAIY7OS4ATDI/*",
+      "policySrn": "NA",
+      "prediction": "Group 103",
+      "recommendation": "Primary",
+      "resourceSrn": "srn:aws:iam::717025312494/Role/dev-carleton-ep",
+      "source_uuid": "7ef05bf4-633a-451d-bec5-6236c762ce33",
+      "swimlaneSrns": "srn:rainbow::Swimlane/c5239e5c-6514-4cfb-80fb-88212eb42373,srn:rainbow::Swimlane/Global",
+      "type": "AWS_UBER_POLICY"
     }
   ]
 }

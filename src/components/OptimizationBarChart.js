@@ -6,12 +6,12 @@ import DropdownComponent from "./Navbar/dropdown";
 const OptimizationBarChart = (props) => {
   return (
     <>
-      <div className="bardrop">
+      {/* <div className="bardrop">
       <Dropdown>
         <Dropdown.Toggle>
           Accounts
         </Dropdown.Toggle>
-      </Dropdown>      </div>
+      </Dropdown>      </div> */}
       <Card className="m-3">
         <Barchart
           seriesData={props.seriesData}
