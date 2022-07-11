@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Table, Card } from "react-bootstrap";
-import sonpai from "../config/sonpai.json";
 
 const DetailedTable = (props) => {
   const [detailsTable, setDetailsTable] = useState([]);
@@ -12,10 +11,10 @@ const DetailedTable = (props) => {
     sankeyjson.forEach((elm, index) => {
       tableData.push(
         <tr key={index}>
-          <td>{elm.effectivePermissionAccount}</td>
-          <td>{elm.policySrn}</td>
+          <td>{elm.account}</td>
           <td>{elm.resourceSrn}</td>
-          <td>{elm.permission_list}</td>
+          <td>{elm.type}</td>
+          <td>{elm.permission}</td>
           <td>{elm.prediction}</td>
         </tr>
       );
@@ -31,19 +30,14 @@ const DetailedTable = (props) => {
           <thead>
             <tr>
               <th className="accwidth">Account</th>
-              <th>Policy Srn</th>
-              <th>Resource Srn</th>
+              <th>ResourceSrn</th>
+              <th>Type</th>
               <th>Permission List</th>
               <th>Prediction</th>
             </tr>
           </thead>
           <tbody>
             {detailsTable.length > 0 && detailsTable}
-            {/* <td>{sankeyjsonpolicieCount}</td>
-              <td>{props.data.srnCount}</td>
-              <td>{props.data.perCount}</td>
-              <td>{props.data.filterCount}</td>
-              <td>{props.data.predictionCount}</td> */}
           </tbody>
         </Table>
       </Card>

@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Highcharts from "highcharts";
-// import HighchartsSankey from "highcharts/modules/sankey";
 import HighchartsReact from "highcharts-react-official";
-// HighchartsSankey(Highcharts);
 
 const Barchart = (props) => {
   useEffect(() => {
     setchartData();
   }, [props]);
-  console.log(props);
 
   const [chartoptions, setchartoptions] = useState({});
   const setchartData = () => {
@@ -23,7 +20,6 @@ const Barchart = (props) => {
         text: "Policies Before and After Optimisation",
         align: "left",
         style: {
-          //color: currentTheme === "dark" ? "#000" : "#FFFFFF",
           fontSize: "16px",
           fontFamily: "Arial",
           fontWeight: "bold",
@@ -57,7 +53,7 @@ const Barchart = (props) => {
         series: {
           cursor: "pointer",
           events: {
-            click: (event) => props.onBarClick(event)
+            click: (event) => props.onBarClick(event),
           },
         },
       },
