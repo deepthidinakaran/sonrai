@@ -23,6 +23,9 @@ import account717025312494 from "./config/account7.json";
 
 //INITIAL SANKEY OPTIONS
 let sankeyOptions = {
+  chart: {
+    // maxHeight: 1000,
+  },
   credits: {
     enabled: false,
   },
@@ -41,8 +44,14 @@ let sankeyOptions = {
   series: [
     {
       keys: ["from", "to", "weight"],
+      minLinkWidth: 1,
       data: [],
       type: "sankey",
+      dataLabels: {
+        // allowOverlap: true,
+      },
+      nodePadding: 1,
+      useHTML:true,
       name: "",
     },
   ],
@@ -62,8 +71,6 @@ function App() {
   const [srnCount, setsrnCount] = useState(285);
   const [filterCount, setfilterCount] = useState(0);
   const [predictionCount, setpredictionCount] = useState(248);
-  const [laneCount, setlaneCount] = useState(0);
-  const [namecount, setnamecount] = useState(0);
   const [isLoading, setLoading] = useState(true);
   const [barAccountCount, setbarAccountCount] = useState(0);
 
@@ -71,6 +78,7 @@ function App() {
     //BARCHART
     let SwimlaneAccountCount = [];
     let barpolicy = [];
+
     scatter.swin.forEach((element) =>
       element.accounts.forEach((item) => {
         barpolicy.push({
@@ -95,7 +103,6 @@ function App() {
       },
     ];
     setbarArray(bar);
-    // getSankeyData();
   }, []);
 
   const onBarClick = (event) => {
@@ -105,6 +112,7 @@ function App() {
 
   const getSankeyData = (value) => {
     setLoading(true);
+
     //DUPLICATING FOR EACH SANKEY CHART
     let temp = JSON.parse(JSON.stringify(sankeyOptions));
     let sanhigh = JSON.parse(JSON.stringify(sankeyOptions));
@@ -112,22 +120,20 @@ function App() {
     let allPolicies = [];
 
     let fileName = "";
-    if (value === "548652128817") {
+
+    if (value == "548652128817") {
       fileName = account548652128817;
-    } else if (value === "003074056772") {
+    } else if (value == "003074056772") {
       fileName = account003074056772;
-    } else if (value === "064667896599") {
+    } else if (value == "064667896599") {
       fileName = account064667896599;
-    } else if (value === "213217834095") {
+    } else if (value == "213217834095") {
       fileName = account213217834095;
-    } else if (value === "380873608913") {
+    } else if (value == "380873608913") {
       fileName = account380873608913;
-    } else if (value === "717025312494");
-    {
+    } else if (value == "717025312494") {
       fileName = account717025312494;
     }
-
-    console.log("shama", fileName.data);
 
     fileName.data.forEach((element) => {
       //BEFORE OPTIMIZATION SANKEY
@@ -157,8 +163,6 @@ function App() {
     setTempArray(temp);
     setsanhighArray(sanhighArray);
     setsanArray(sanhigh);
-
-    console.log("dd", temp, sanhighArray, sanhigh);
     setLoading(false);
   };
 
